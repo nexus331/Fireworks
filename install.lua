@@ -1,4 +1,11 @@
+--Override Existing files
+shell.run("rm main.lua")
+shell.run("rm reciever.lua")
+
 print("Welcome to the Fireworks Installer and Updater")
 sleep(0.3)
 print("Installing now...")
 sleep(0.3)
+shell.run("wget https://raw.githubusercontent.com/nexus331/Fireworks/refs/heads/main/Main/main.lua")
+shell.run("wget https://raw.githubusercontent.com/nexus331/Fireworks/refs/heads/main/Main/reciever.lua")
+print("Installation Done...")
