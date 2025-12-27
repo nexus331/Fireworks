@@ -1,7 +1,9 @@
 -- Program Info
 local ver = "1.0"
 local manf = "LTi Technologies"
-local id = shell.run("id")
+local compid = shell.run("id")
+rednet.open("front")
+print("Network Connected.")
 
 -- FIREWORK Launch Types --
 local function firework1()
@@ -39,9 +41,7 @@ shell.run("clear")
 print("Fireworks Show Software")
 print("Version:", ver)
 print("By:", manf)
-print("Computer ID:", id)
-rednet.open("front")
-print("Network Online.")
+print("Computer ID:", compid)
 
 -- Remote Execution
 
@@ -51,11 +51,14 @@ local fireworkoptions = {
     ["A-F3"] = firework3(), "F3"
 }
 
-local recv = rednet.recieve()
-
 while true do
-    if fireworkoptions[recv] then
-        fireworkoptions[recv]()
-        print(fireworkoptions[recv])
+    local id, fmsg
+    repeat
+        
+        id, fmsg = rednet.receive()
+    until id == 0
+
+    if fireworkoptions[fmsg] then
+        fireworkoptions[fmsg]()
     end
 end
