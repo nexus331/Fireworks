@@ -49,7 +49,7 @@ local fireworkoptions = {
     [A-F3] = firework3(), "F3"
 }
 
-local recv = rednet.recieve()
+local recv = rednet.recieve(0)
 
 while true do
     if fireworkoptions[recv] then
