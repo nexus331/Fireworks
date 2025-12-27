@@ -40,6 +40,8 @@ print("Fireworks Show Software")
 print("Version:", ver)
 print("By:", manf)
 print("Computer ID:", id)
+rednet.open("front")
+print("Network Online.")
 
 -- Remote Execution
 
