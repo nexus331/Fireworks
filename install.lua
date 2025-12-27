@@ -1,4 +1,5 @@
 --Override Existing files
+print("Finding Existing Files...")
 shell.run("rm main.lua")
 shell.run("rm reciever.lua")
 
