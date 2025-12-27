@@ -44,12 +44,12 @@ print("Computer ID:", id)
 -- Remote Execution
 
 local fireworkoptions = {
-    [A-F1] = firework1(), "F1",
-    [A-F2] = firework2(), "F2",
-    [A-F3] = firework3(), "F3"
+    ["A-F1"] = firework1(), "F1",
+    ["A-F2"] = firework2(), "F2",
+    ["A-F3"] = firework3(), "F3"
 }
 
-local recv = rednet.recieve(0)
+local recv = rednet.recieve()
 
 while true do
     if fireworkoptions[recv] then
