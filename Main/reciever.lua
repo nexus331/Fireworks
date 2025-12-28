@@ -46,11 +46,15 @@ print("Computer ID:", compid)
 -- Remote Execution
 
 while true do
+
     local id, fmsg = rednet.receive()
 
     if fmsg == "f1" then
-        print("f1 is sent") else
-            print("not f1")
+        print("F1 Activated")
+    elseif fmsg == "f2" then
+        print("F2 Activated")
+    elseif fmsg == "f3" then 
+        print("F3 Activated")
     end
     
 end
