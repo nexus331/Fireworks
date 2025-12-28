@@ -55,6 +55,8 @@ while true do
         print("F2 Activated")
     elseif fmsg == "f3" then 
         print("F3 Activated")
+    else 
+        print("Invalid Option!")
     end
     
 end
