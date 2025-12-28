@@ -45,20 +45,10 @@ print("Computer ID:", compid)
 
 -- Remote Execution
 
-local fireworkoptions = {
-    ["A-F1"] = firework1(), "F1",
-    ["A-F2"] = firework2(), "F2",
-    ["A-F3"] = firework3(), "F3"
-}
-
 while true do
-    local id, fmsg
-    repeat
-        
-        id, fmsg = rednet.receive()
-    until id == 0
-
-    if fireworkoptions[fmsg] then
-        fireworkoptions[fmsg]()
+    local fmsg = rednet.receive()
+    if fmsg == "f1" then
+        print("Test")
     end
+    
 end
