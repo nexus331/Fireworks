@@ -11,6 +11,6 @@ redstone.setOutput("back", false)
 print("Firework Launch Sequence Initiated")
 
 -- FIREWORK EXECUTION --
-rednet.send(1, "A-F1")
+rednet.send(1, "f1")
 sleep(3)
 rednet.send(2, "A-F2")
