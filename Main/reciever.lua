@@ -119,8 +119,8 @@ while true do
     elseif fmsg == "f4" then
         print("F4 Activated")
         firework4()
-    elseif fmsg == "f4" then
-        print("F4 Activated")
+    elseif fmsg == "f5" then
+        print("F5 Activated")
         firework5()
     else 
         print("Invalid Option!")
