@@ -6,7 +6,7 @@ rednet.open("front")
 -- SHOW START --
 redstone.setOutput("back", true)
 sleep(3)
-print("Now Playing: Auld Lang Syne")
+print("Now Playing: 2026 Luxemburg New Year Countdown Mix")
 redstone.setOutput("back", false)
 print("Firework Launch Sequence Initiated")
 
