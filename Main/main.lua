@@ -1,14 +1,23 @@
--- START OF PROGRAM -- 
-shell.run("clear")
-print("Program Running...")
-rednet.open("front")
+-- PROGRAM VARIABLES --
 
--- VARIABLES --
+local ver = "0.1"
+local manf = "LTi Technologies"
+local compid = id
+
+--  RECIEVERS VARIABLES --
 
 local re1 = 1
 local re2 = 2
 local re3 = 3
 local re4 = 4
+
+-- START OF PROGRAM -- 
+shell.run("clear")
+print("Firework Show Server")
+print("Version:", ver)
+print("By:", manf)
+rednet.open("front")
+print("Network Connected with ID:", compid)
 
 -- SHOW START --
 redstone.setOutput("back", true)

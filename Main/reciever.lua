@@ -96,7 +96,7 @@ end
 
 -- Program INIT
 shell.run("clear")
-print("Fireworks Show Software")
+print("Fireworks Show Client")
 print("Version:", ver)
 print("By:", manf)
 print("Computer ID:", compid)
