@@ -1,7 +1,7 @@
 -- Program Info
-local ver = "1.0"
+local ver = "0.1"
 local manf = "LTi Technologies"
-local compid = shell.run("id")
+local compid = id
 rednet.open("front")
 print("Network Connected.")
 

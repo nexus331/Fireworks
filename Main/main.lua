@@ -3,6 +3,13 @@ shell.run("clear")
 print("Program Running...")
 rednet.open("front")
 
+-- VARIABLES --
+
+local re1 = 1
+local re2 = 2
+local re3 = 3
+local re4 = 4
+
 -- SHOW START --
 redstone.setOutput("back", true)
 sleep(3)
@@ -13,45 +20,47 @@ print("Firework Launch Sequence Initiated")
 -- FIREWORK EXECUTION --
 sleep(28)
 print("Tower Firework Launched")
-rednet.send(7, "f4")
+rednet.send(re1, "f4")
 sleep(19)
 print("Market Activated")
-rednet.send(3, "f1")
+rednet.send(re2, "f1")
 sleep(5)
 print("Market Activated")
-rednet.send(3, "f1")
+rednet.send(re2, "f1")
 sleep(5)
 print("Market Activated")
-rednet.send(3, "f1")
-rednet.send(7, "f4")
+rednet.send(re2, "f1")
+rednet.send(re1, "f4")
 print("Tower Activated")
 sleep(4.8)
 print("Market Activated")
-rednet.send(3, "f1")
+rednet.send(re2, "f1")
 sleep(4.8)
 print("Market Activated")
-rednet.send(3, "f1")
+rednet.send(re2, "f1")
 sleep(4.8)
 print("Market Activated")
-rednet.send(3, "f1")
+rednet.send(re2, "f1")
 sleep(4.8)
 print("Market Activated") --1
-rednet.send(3, "f1")
+rednet.send(re2, "f1")
 sleep(4.8)
 print("Market Activated") -- 2
-rednet.send(3, "f1")
+rednet.send(re2, "f1")
 sleep(4.8)
 print("Market Activated") -- 3
-rednet.send(3, "f1")
+rednet.send(re2, "f1")
 sleep(4.8)
 print("Market Activated") -- 4
-rednet.send(3, "f1")
+rednet.send(re2, "f1")
 sleep(4.8)
 print("Market Activated") -- 5
-rednet.send(3, "f1") 
+rednet.send(re2, "f1") 
 sleep(5)
-rednet.send(3, "f5")
-rednet.send(7, "f1")
+rednet.send(re2, "f5")
+rednet.send(re1, "f1")
 sleep(3)
-rednet.send(3, "f5")
-rednet.send(7, "f5")
+rednet.send(re2, "f5")
+rednet.send(re2, "f5")
+sleep(4)
+rednet.send(re2, "f5")
