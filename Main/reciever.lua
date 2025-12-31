@@ -164,6 +164,8 @@ while true do
     elseif fmsg == "f5" then
         print("F5 Activated")
         firework5()
+    elseif fmsg == "rapid" then
+        rapid()
     else 
         print("Invalid Option!")
     end
