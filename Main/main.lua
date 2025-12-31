@@ -11,6 +11,7 @@ local re2 = 2
 local re3 = 3
 local re4 = 4
 local re5 = 5
+local rapidrec = 7
 
 -- LAUNCH FUNCTIONS --
 
@@ -145,6 +146,11 @@ end
 local function rec5f5()
     print("Reciever 5 recieved F5")
     rednet.send(re5, "f5")
+end
+
+local function rapid()
+    print("Reciever recieved rapid")
+    rednet.send(rapidrec, "f5")
 end
 
 
