@@ -1,5 +1,5 @@
 -- Program Info
-local ver = "0.1"
+local ver = "0.2"
 local manf = "LTi Technologies"
 local compid = id
 rednet.open("front")
