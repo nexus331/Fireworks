@@ -208,4 +208,35 @@ print("1:22")
 sleep(8) -- 1:30
 rec1f1()
 print("1:30")
-
+sleep(11) -- 1:41
+rec2f5()
+rec3f1()
+rec4f1()
+print("1:41")
+sleep(4) -- 1:45
+rec2f5()
+rec1f1()
+print("1:45")
+sleep(3) -- 1:48
+rec2f5()
+print("1:48")
+sleep(4) -- 1:52
+rec4f5()
+print("1:52")
+sleep(1) -- 1:53
+rec3f1()
+print("1:53")
+sleep(4) -- 1:57
+rec2f1()
+rec4f1()
+rec3f1()
+rec1f1()
+print("1:57")
+sleep(3) -- 2:00
+rapid()
+rec2f1()
+print("2:00")
+sleep(3) -- 2:03
+rec4f1()
+rec2f5()
+print("2:03")
