@@ -1,6 +1,6 @@
 -- PROGRAM VARIABLES --
 
-local ver = "0.3"
+local ver = "0.4"
 local manf = "LTi Technologies"
 local compid = id
 
