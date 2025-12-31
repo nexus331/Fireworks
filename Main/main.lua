@@ -153,7 +153,7 @@ shell.run("clear")
 print("Firework Show Server")
 print("Version:", ver)
 print("By:", manf)
-rednet.open("front")
+rednet.open("top")
 print("Network Connected with ID:", compid)
 
 -- SHOW START --
