@@ -96,34 +96,42 @@ end
 
 local function rapid()
     redstone.setOutput("left", true) -- 1
+    print("rapid")
     sleep(0.1)
     redstone.setOutput("left", false)
     sleep(0.1)
-    redstone.setOutput("right", true)  -- 2
+    redstone.setOutput("right", true)
+    print("rapid") -- 2
     sleep(0.1)
     redstone.setOutput("right", false)
     sleep(0.1)
-    redstone.setOutput("back", true) -- 3
+    redstone.setOutput("back", true)
+    print("rapid")-- 3
     sleep(0.1)
     redstone.setOutput("back", false)
     sleep(0.1)
-    redstone.setOutput("top", true) -- 4
+    redstone.setOutput("top", true)
+    print("rapid")-- 4
     sleep(0.1)
     redstone.setOutput("top", false)
     sleep(0.1) -- REVERSE --
-    redstone.setOutput("top", true) -- 1
+    redstone.setOutput("top", true)
+    print("rapid")-- 1
     sleep(0.1)
     redstone.setOutput("top", false)
     sleep(0.1)
-    redstone.setOutput("back", true)  -- 2
+    redstone.setOutput("back", true)
+    print("rapid")-- 2
     sleep(0.1)
     redstone.setOutput("back", false)
     sleep(0.1)
-    redstone.setOutput("right", true) -- 3
+    redstone.setOutput("right", true)
+    print("rapid")-- 3
     sleep(0.1)
     redstone.setOutput("right", false)
     sleep(0.1)
-    redstone.setOutput("left", true) -- 4
+    redstone.setOutput("left", true)
+    print("rapid")-- 4
     sleep(0.1)
     redstone.setOutput("left", false)
 end
