@@ -1,6 +1,6 @@
 -- PROGRAM VARIABLES --
 
-local ver = "0.2"
+local ver = "0.3"
 local manf = "LTi Technologies"
 local compid = id
 
@@ -150,7 +150,7 @@ end
 
 local function rapid()
     print("Reciever recieved rapid")
-    rednet.send(rapidrec, "f5")
+    rednet.send(rapidrec, "rapid")
 end
 
 
@@ -171,7 +171,20 @@ print("Firework Launch Sequence Initiated")
 
 -- FIREWORK EXECUTION --
 sleep(60)
-rec1f5()
-rec2f1()
-sleep(2)
+rapid()
+rec1f1()
 rec2f5()
+sleep(4)
+rec2f5()
+rec1f1()
+sleep(4)
+rec2f5()
+sleep(0.1)
+rec4f1()
+rec3f1()
+sleep(0.1)
+rec4f1()
+rec3f1()
+sleep(0.1)
+rec4f1()
+rec3f1()
