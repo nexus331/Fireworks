@@ -174,28 +174,38 @@ sleep(60) -- 1:00
 rapid()
 rec1f1()
 rec2f5()
+print("1:00")
 sleep(4) -- 1:04
 rec2f5()
 rec1f1()
+print("1:04")
 sleep(4) -- 1:08
 rec2f5()
+print("1:08")
 sleep(1) -- 1:09
 rec4f1()
 rec3f1()
+print("1:09")
 sleep(1) -- 1:10
 rec4f1()
 rec3f1()
+print("1:10")
 sleep(1) -- 1:11
 rec4f1()
 rec3f1()
+print("1:11")
 sleep(3) -- 1:14
 rec1f1()
 rec2f5()
+print("1:14")
 sleep(4) -- 1:18
 rec1f1()
+print("1:18")
 sleep(4) -- 1:22
 rapid()
 rec2f1()
-sleep(8)
+print("1:22")
+sleep(8) -- 1:30
 rec1f1()
+print("1:30")
 
