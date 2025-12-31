@@ -170,21 +170,32 @@ redstone.setOutput("back", false)
 print("Firework Launch Sequence Initiated")
 
 -- FIREWORK EXECUTION --
-sleep(60)
+sleep(60) -- 1:00
 rapid()
 rec1f1()
 rec2f5()
-sleep(4)
+sleep(4) -- 1:04
 rec2f5()
 rec1f1()
-sleep(4)
+sleep(4) -- 1:08
 rec2f5()
-sleep(0.1)
+sleep(1) -- 1:09
 rec4f1()
 rec3f1()
-sleep(0.1)
+sleep(1) -- 1:10
 rec4f1()
 rec3f1()
-sleep(0.1)
+sleep(1) -- 1:11
 rec4f1()
 rec3f1()
+sleep(3) -- 1:14
+rec1f1()
+rec2f5()
+sleep(4) -- 1:18
+rec1f1()
+sleep(4) -- 1:22
+rapid()
+rec2f1()
+sleep(8)
+rec1f1()
+
